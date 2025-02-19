@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+                <audio src="https://f.top4top.io/m_3199cw4am1.mp3" autoplay controls> </audio> 
+		<title>BJI HEALTH</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #121212;
+            color: #ffffff;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #00c3ff;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select {
+            width: 80%;
+            padding: 8px;
+            border: 1px solid #00c3ff;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: #ffffff;
+        }
+
+        button {
+            background: #00c3ff;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #009acd;
+        }
+
+        .result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #00ff88;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Ideal Weight Calculator</h2>
+
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter height in cm">
+
+        <button onclick="calculateIdealWeight()">Calculate Ideal Weight</button>
+
+        <div id="ideal-weight-result" class="result"></div>
+    </div>
+
+    <script>
+        function calculateIdealWeight() {
+            let gender = document.getElementById("gender").value;
+            let height = document.getElementById("height").value;
+
+            if (!gender || !height) {
+                document.getElementById("ideal-weight-result").innerHTML = "⚠ Please fill in all details correctly.";
+                return;
+            }
+
+            let minWeight, maxWeight;
+
+            if (gender === "male") {
+                minWeight = 18.5 * ((height / 100) ** 2);
+                maxWeight = 24.9 * ((height / 100) ** 2);
+            } else {
+                minWeight = 18.5 * ((height / 100) ** 2);
+                maxWeight = 24.9 * ((height / 100) ** 2);
+            }
+
+            document.getElementById("ideal-weight-result").innerHTML = 
+                `Your ideal weight range: <b>${minWeight.toFixed(1)} kg - ${maxWeight.toFixed(1)} kg</b>`;
+        }
+    </script>
+<button> <a href="index-sub.html">BACK</a></button>
+</body>
+</html>
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Copyright  2025:  <a href="https://sh4dowbroker.github.io">Developed By TEAM BJI </a></p>
+						
+					</footer>
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
